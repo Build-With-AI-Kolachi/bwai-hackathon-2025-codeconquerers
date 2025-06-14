@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback } from 'react';
 
 export const useAudioRecorder = () => {
+  // States Defines
   const [isRecording, setIsRecording] = useState(false);
   const [duration, setDuration] = useState(0);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
